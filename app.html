@@ -61,29 +61,37 @@
     <main class="flex-shrink-0">
         <div class="container mt-5">
             <div class="row">
-
+                <!-- Descriptions -->
                 <div class="col">
-                    <h1>Rewind: A Coding Challenge</h1>
-                    <h4 class="lead">
-                        There and back again. A javascript coding exercise using arrays. Write a
-                        program the displays a string in reverse.
-                    </h4>
+                    <div class="row">
+                        <h1>Rewind: A Coding Challenge</h1>
+                        <h4 class="lead">
+                            There and back again. A javascript coding exercise using arrays. Write a
+                            program the displays a string in reverse.
+                        </h4>
+                        <h2 class="mt-3">Instructions</h2>
+                        <p>Enter a string. Press the button and the string will appear in reverse.</p>
+                    </div>
                 </div>
 
-                <div class="col">
-                    <h1>Enter a String to Reverse</h1>
+                <!-- Input and Output -->
+                <div class="col border-start border-5">
+                    <h3>Enter a String to Reverse</h3>
                     <form class="row">
                         <div class="col-12">
-                            <input id="inputStr" name="inputStr" class="form-control" type="text" placeholder="Enter A String">
+                            <label for="inputValue" class="form-label">String</label>
+                            <input id="inputStr" name="inputStr" class="form-control" type="text" 
+                            aria-label="String" placeholder="Enter A String">
                         </div>
                         <div class="col-12 d-flex justify-content-start justify-content-md-end mt-3">
                             <button id="btnSubmit" class="btn btn-primary">Reverse It!</button>
                         </div>
                     </form>
+                    <h2 class="mt-5 border-bottom border-5">Results</h2>
                     <div id="alertSuccess" class="alert alert-success mt-5 fade show" role="alert">
                         <h4 class="alert-heading">The string in reverse is: </h4>
                         <p id="alertRevStr">
-                            
+                            <!-- Generate Reversed String -->
                         </p>
                     </div>
                 </div>
