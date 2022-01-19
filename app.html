@@ -81,14 +81,14 @@
                         <div class="col-12">
                             <label for="inputValue" class="form-label">String</label>
                             <input id="inputStr" name="inputStr" class="form-control" type="text" 
-                            aria-label="String" placeholder="Enter A String">
+                                placeholder="Enter A String" value="Replace Me!" aria-label="String">
                         </div>
                         <div class="col-12 d-flex justify-content-start justify-content-md-end mt-3">
-                            <button id="btnSubmit" class="btn btn-primary">Reverse It!</button>
+                            <button id="btnSubmit" type="button" class="btn btn-primary">Reverse It!</button>
                         </div>
                     </form>
                     <h2 class="mt-5 border-bottom border-5">Results</h2>
-                    <div id="alertSuccess" class="alert alert-success mt-5 fade show" role="alert">
+                    <div id="alertSuccess" class="alert alert-success mt-5 d-none fade show" role="alert">
                         <h4 class="alert-heading">The string in reverse is: </h4>
                         <p id="alertRevStr">
                             <!-- Generate Reversed String -->
