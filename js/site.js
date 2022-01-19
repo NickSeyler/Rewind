@@ -26,6 +26,6 @@ function reverseAString(inputStr){
 function displayData(revStr){
 
     document.getElementById("alertRevStr").innerHTML = `${revStr}`;
-    document.getElementById("alertSuccess").classList.remove("invisible");
+    document.getElementById("alertSuccess").classList.remove("d-none");
 
 }
