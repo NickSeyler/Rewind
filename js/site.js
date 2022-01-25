@@ -2,7 +2,7 @@
 function getStr(){
     let inputStr = document.getElementById("inputStr").value;
 
-    let revStr = reverseAString(inputStr);
+    let revStr = revStr(inputStr);
 
     displayData(revStr);
 }
@@ -10,7 +10,7 @@ function getStr(){
 //Input: String
 //Return: String
 //Reverse a String
-function reverseAString(inputStr){
+function revStr(inputStr){
     let revStr = "";
 
     for(let i = inputStr.length - 1; i >= 0; i--){
@@ -22,7 +22,7 @@ function reverseAString(inputStr){
 
 //Input: String
 //Return: None
-//Display a reversed string
+//Display the string
 function displayData(revStr){
 
     document.getElementById("alertRevStr").innerHTML = `${revStr}`;

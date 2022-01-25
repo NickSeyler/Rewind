@@ -65,27 +65,65 @@
         <div class="container mt-5 px-5">
             <h2 class="border-1 border-bottom border-dark">The Code</h2>
             <div class="row">
+
                 <div class="col-12 col-lg-8">
                     <pre class="line-numbers">
                         <code class="language-js">
-                            //Display message to the user
-                            function getMessage(){
-                                let userMessage = document.getElementById("message").value;
-                                Swal.fire(
-                                    'The App Title',
-                                    userMessage,
-                                    'success'
-                                );
-                            }                       
+                            //get the string from the user
+                            function getStr(){
+                            let inputStr = document.getElementById("inputStr").value;
+
+                            let revStr = reverseAString(inputStr);
+
+                            displayData(revStr);
+                            }
                         </code>
                     </pre>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <p>The code is structured in one function.
-                        It accesses the user's input then displays a Sweetalert alert window.</p>
-                    <h5>getMessage</h5>
-                    <p>Prints the user's inputted message.</p>
+                    <h5>getStr</h5>
+                    <p>Get the string from the input.</p>
                 </div>
+
+                <div class="col-12 col-lg-8">
+                    <pre class="line-numbers">
+                        <code class="language-js">
+                            //Reverse a String
+                            function revStr(inputStr){
+                            let revStr = "";
+
+                            for(let i = inputStr.length - 1; i >= 0; i--){
+                            revStr += inputStr[i];
+                            }
+
+                            return revStr;
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h5>revStr</h5>
+                    <p>Reverse the string.</p>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <pre class="line-numbers">
+                        <code class="language-js">
+                            //Display the string
+                            function displayData(revStr){
+
+                            document.getElementById("alertRevStr").innerHTML = `${revStr}`;
+                            document.getElementById("alertSuccess").classList.remove("d-none");
+
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h5>displayStr</h5>
+                    <p>Display the string to the webpage.</p>
+                </div>
+
             </div>
         </div>
     </main>
