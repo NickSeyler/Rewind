@@ -71,11 +71,11 @@
                         <code class="language-js">
                             //get the string from the user
                             function getStr(){
-                            let inputStr = document.getElementById("inputStr").value;
+                                let inputStr = document.getElementById("inputStr").value;
 
-                            let revStr = reverseAString(inputStr);
+                                let revStr = revStr(inputStr);
 
-                            displayData(revStr);
+                                displayData(revStr);
                             }
                         </code>
                     </pre>
@@ -92,13 +92,13 @@
                         <code class="language-js">
                             //Reverse a String
                             function revStr(inputStr){
-                            let revStr = "";
+                                let revStr = "";
 
-                            for(let i = inputStr.length - 1; i >= 0; i--){
-                            revStr += inputStr[i];
-                            }
+                                for(let i = inputStr.length - 1; i >= 0; i--){
+                                    revStr += inputStr[i];
+                                }
 
-                            return revStr;
+                                return revStr;
                             }
                         </code>
                     </pre>
@@ -115,10 +115,8 @@
                         <code class="language-js">
                             //Display the string
                             function displayData(revStr){
-
-                            document.getElementById("alertRevStr").innerHTML = `${revStr}`;
-                            document.getElementById("alertSuccess").classList.remove("d-none");
-
+                                document.getElementById("alertRevStr").innerHTML = `${revStr}`;
+                                document.getElementById("alertSuccess").classList.remove("d-none");
                             }
                         </code>
                     </pre>

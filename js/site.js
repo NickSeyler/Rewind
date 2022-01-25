@@ -24,8 +24,6 @@ function revStr(inputStr){
 //Return: None
 //Display the string
 function displayData(revStr){
-
     document.getElementById("alertRevStr").innerHTML = `${revStr}`;
     document.getElementById("alertSuccess").classList.remove("d-none");
-
 }
